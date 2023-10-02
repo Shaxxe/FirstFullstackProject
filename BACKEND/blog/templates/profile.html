@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if user.is_authenticated %}
+
+
+<h2> Profilim; </h2>
+<div class= "container">
+    <img class = "rounded-circle" src="{{blog_user.profile_picture.url}}" width="50" height="50">
+    <p> Kullanıcı Adı = {{ user.username }}</p>
+    <p> Email = {{user.email}} </p>
+    <p> Bio = {{blog_user.bio}} </p>
+    <p> Doğum Tarihi {{blog_user.date_of_birth}}</p>
+</div>
+
+<div>
+    <p> <b>Veri Degişikliği İçin;</b></p>
+
+    <form method="POST" class="user-form" enctype='multipart/form-data'>{% csrf_token %}
+        {{ form.media }}
+        {{ form.as_p}}
+        <button type="submit" class="save btn btn-secondary">Save</button>
+    </form>
+</div>
+
+{% else %}
+
+<p> Giriş yapmak için üstten giriş yapma butonuna tıklayınız. Hesabınız yoksa üstten kayıt olma butonuna tkıklayınız. </p>
+
+{% endif %}
+{% endblock %}

@@ -1,0 +1,135 @@
+.page-header {
+    background-color: cyan;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 20px 20px 20px 40px;
+    
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-container{
+    width: 10rem;
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.footer {
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea,
+.post-form input {
+    width: 100%;
+}
+
+.top-menu,
+.top-menu:hover,
+.top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h2 a,
+.post h2 a:visited {
+    color: #000000;
+}
+
+.post > .date,
+.post > .actions {
+    float: right;
+}
+
+.btn-secondary,
+.btn-secondary:visited {
+    color: #C25100;
+    background: none;
+    border-color: #C25100;
+}
+
+.btn-secondary:hover {
+    color: #ffffff;
+    background-color: #C25100;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-section .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-section label {
+    font-weight: bold;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-section button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Optional: Add some additional styling to improve the form appearance */
+  .contact-section input:focus,
+  .contact-section textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+  }
+  

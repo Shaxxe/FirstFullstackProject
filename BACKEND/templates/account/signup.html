@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load socialaccount %}
+
+
+{% block content %}
+<h2>Kayıt Ol</h2>
+<form method="POST" action="{% url 'account_signup' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Kayıt Ol</button>
+</form>
+{% endblock %}
